@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meme Generator</title>
+</head>
+<body>
+    <header>
+        <h1>Meme Generator</h1>
+    </header>
+    <section>
+        <div id="images" class="hideMe">
+            <div class="reset">
+                <input type="button" id="resetBtn"  value="Make another meme"> 
+            </div>
+            <div class="memeContainer">
+            </div>
+        </div>
+        <div class="formContainer">
+            <form>
+                <label for="topText">Top Text:</label><br>
+                <input type="text" id="topText" name="topText" placeholder="Your text here..."><br>
+                <label for="bottomText">Bottom Text:</label><br>
+                <input type="text" id="bottomText" name="bottomText" placeholder="Your text here..."><br>
+                <label for="imageURL">Enter Image URL</label><br> 
+                <input type="url" id="imageURL" name="imageURL" placeholder="www.example.com/image.jpg" required><br>
+                <label for="imageWidth">Enter image width</label><br>
+                <input type="number" id="imageWidth" name="imageWidth" placeholder="Ex: 600px" min="50"><br>
+                <label for="imageHeight">Enter image height</label><br>
+                <input type="number" id="imageHeight" name="imageHeight" placeholder="Ex: 500px" min="50"><br>
+                <label for="fontSize">Enter font size</label><br>
+                <input type="number" id="fontSize" name="fontSize" placeholder="Ex: 40px"><br>
+                <input type="submit" id="submit" value="Submit">
+              </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+/* Global styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: lightblue;
+    color: darkblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Button styles */
+#submit, #resetBtn {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: darkblue;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+#submit:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+
+@media (min-width: 768px) {
+    #submit {
+        padding: 0.25em 0.75em;
+    }
+}
+
+/* Canvas styles */
+.canvasContainer {
+    position: relative;
+    display: inline-block;
+}
+
+canvas {
+    margin: 5px;
+}
+
+/* Image deletion styles */
+.removeImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+p {
+    font-size: 2rem;
+    color: darkblue;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.canvasContainer:hover .removeImage {
+    display: flex;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 20px;
+}
+
+input {
+    width: 25%;
+    padding: 10px;
+    border: 0;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* Utility classes */
+.hideMe {
+    display: none;
+}
+
+.memeContainer {
+    display: inline-block;
+    margin: 10px;
+}
+
+.reset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#resetBtn {
+    position: fixed;
+    z-index: 9999;
+}
